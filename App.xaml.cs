@@ -23,7 +23,7 @@ namespace ShopTracker
         }
         public App()
         {
-            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("pt-BR");
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
 
             InitializeComponent();
 

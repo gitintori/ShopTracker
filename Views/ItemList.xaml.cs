@@ -127,7 +127,7 @@ public partial class ItemList : ContentPage
 
         string msg = $"Total: {sum:C}";
 
-        DisplayAlert("Total:", msg, "OK");
+        DisplayAlert("Total", msg, "OK");
     }
 
     private void Edit_Clicked(object sender, EventArgs e)

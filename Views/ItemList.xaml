@@ -31,8 +31,8 @@
                 SelectedIndexChanged="PickCategory">
             <Picker.Items>
                 <x:String>All</x:String>
-                <x:String>Food</x:String>
-                <x:String>Drinks</x:String>
+                <x:String>Groceries</x:String>
+                <x:String>Others</x:String>
                 <x:String>Cleaning</x:String>
                 <x:String>Hygiene</x:String>
                 <x:String>Clothes</x:String>
