@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShopTracker.Views.EditItem"
+             Title="{Binding Description}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_Edition_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout Spacing="10" Padding="10">
+        <Label Text="Item Description:" />
+        <Entry x:Name="txt_description" Text="{Binding Description}" />
+
+        <Label Text="Quantity:" />
+        <Entry x:Name="txt_quantity" Text="{Binding Quantity}" Keyboard="Numeric" />
+
+        <Label Text="Unit Price:" />
+        <Entry x:Name="txt_price" Text="{Binding Price}" Keyboard="Numeric" />
+
+        <Picker x:Name="categoryPicker"
+                Title="Category:"
+                Margin="0, 10, 0, 0"
+                SelectedIndexChanged="PickCategory">
+            <Picker.Items>
+                <x:String>Food</x:String>
+                <x:String>Drinks</x:String>
+                <x:String>Cleaning</x:String>
+                <x:String>Hygiene</x:String>
+                <x:String>Clothes</x:String>
+                <x:String>Electronics</x:String>
+            </Picker.Items>
+        </Picker>
+
+    </VerticalStackLayout>
+</ContentPage>
